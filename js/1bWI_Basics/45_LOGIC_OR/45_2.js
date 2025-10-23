@@ -18,7 +18,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 let speed = 81;
 let trafficLevel = 7;
-
+ 
 if (speed > 80 || trafficLevel > 7) {
     console.log("Slow down!");
 } else {

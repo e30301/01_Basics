@@ -19,7 +19,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 let result = 17.4 / 3.9;
 
 console.log("The result of 17.4 divided by 3.9 is " + result + ".");
-
+ 
 let firstname = "Isaak";
 let lastname = "Vogel";
 

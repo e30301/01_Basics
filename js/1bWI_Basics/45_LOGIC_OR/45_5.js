@@ -18,7 +18,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 let heartRate = 90;
 let age = 20;
-
+ 
 if (age < 30 && heartRate < 100) {
     console.log("light exercise");
 }

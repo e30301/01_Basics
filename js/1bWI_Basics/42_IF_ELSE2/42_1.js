@@ -18,7 +18,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 let randomNumber = Math.floor(Math.random() * 10); 
 console.log(randomNumber);
-
+ 
 if (randomNumber < 5) {
     console.log("smaller that 5");
 } else if (randomNumber == 5) {

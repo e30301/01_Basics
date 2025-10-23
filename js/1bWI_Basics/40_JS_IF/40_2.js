@@ -17,7 +17,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 color = "blue";
-
+ 
 if (color == "red") {
     console.log("stop!");
 } else if (color == "yellow") {

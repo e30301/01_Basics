@@ -20,7 +20,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 // var apple = "Apple";
 var bananaPricePerKilo = 2.14;
 var applePricePerKilo = 3.43;
-
+ 
 var roundedResult1 = Math.round(0.34 * applePricePerKilo * 8);
 var roundedResult2 = Math.round(0.22 * bananaPricePerKilo * 17);
 var roundedResult3 = Math.round(0.34 * applePricePerKilo * 1000);

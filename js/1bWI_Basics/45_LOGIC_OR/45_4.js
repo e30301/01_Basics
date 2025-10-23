@@ -18,7 +18,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 let age = 7;
 let money = 100;
-
+ 
 if (age > 17 && money > 11) {
     console.log("ticket purchased.");
 } else if (age > 17 && money < 12) {
