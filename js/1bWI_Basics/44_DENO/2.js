@@ -16,20 +16,20 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 
-let points = Math.floor(Math.random() * 100);
-
-if (points > 89) {
-    console.log("Grade A");
-
-} else if (points > 79) {
-    console.log("Grade B");
-
-} else if (points > 69) {
-    console.log("Grade C");
-
-} else if (points > 59) {
-    console.log("Grade D");
-
+let num = -5;
+ 
+if (num > 0) {
+    console.log("the number is positive");
 } else {
-    console.log("Grade F");
+    console.log("the number is not positive");
+}
+if (num < 0) {
+    console.log("the number is negative");
+} else {
+    console.log("the number is positive or 0");
+}
+if (num == 0) {
+    console.log("the number is 0");
+} else {
+    console.log("the number is not 0");
 }

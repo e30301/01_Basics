@@ -15,12 +15,16 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 */
 
 
-
-let speed = 81;
-let trafficLevel = 7;
+let choice = prompt("Getränk? (1 = Cola | 2 = Wasser | 3 = Bier | 4 = Tee |");
  
-if (speed > 80 || trafficLevel > 7) {
-    console.log("Slow down!");
+if (choice == 1) {
+    console.log("Cola gekauft"); 
+} else if (choice == 2) {
+    console.log("Wasser gekauft");
+} else if (choice == 3) {
+    console.log("Bier gekauft");
+} else if (choice == 4) {
+    console.log("Tee gekauft");
 } else {
-    console.log("You are good to go");
+    console.log("invalid choice");
 }
