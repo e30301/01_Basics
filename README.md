@@ -1,6 +1,6 @@
 ## Javascript Basics
 ---
-![Schreibfehler Abschreiben ist crazy](/assets/Bildschirmfoto_20251113_130608.png)
+
 
 
 - Variablen
