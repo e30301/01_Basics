@@ -17,7 +17,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 let number = 19;
-
+ 
 if (number < 20) {
   console.log("mini");
 } else if (number > 20 && number < 50) {
@@ -25,7 +25,7 @@ if (number < 20) {
 } else if (number > 50) {
   console.log("large");
 }
-
+ 
 if (number <= 7) {
   console.log("mini");
 } else if (number > 7 && number < 90) {

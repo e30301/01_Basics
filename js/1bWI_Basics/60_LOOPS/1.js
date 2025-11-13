@@ -17,7 +17,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 let sum = 0;
 let i = 0;
 let num = 1;
-
+ 
 while (i < 100) {
     sum = num + sum;
     i++

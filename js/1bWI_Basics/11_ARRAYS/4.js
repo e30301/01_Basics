@@ -25,9 +25,9 @@ while (i !== 10) {
     arr.push(rand);
     i++;
 }
-
+ 
 for (let index = 0; index < arr.length; index++) {
     sum = sum + arr[index];
 }
-
+ 
 console.log(sum / arr.length);

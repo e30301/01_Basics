@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 let i = 1;
-
+ 
 while (i < 21) {
     if (i % 3 !== 0) {
         console.log(i);

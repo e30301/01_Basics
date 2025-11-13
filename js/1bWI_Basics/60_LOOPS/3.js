@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 let i = 20;
-
+ 
 while (i !== 0) {
     console.log(i);
     i--

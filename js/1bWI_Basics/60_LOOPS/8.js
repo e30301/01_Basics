@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 let i = 1;
-
+ 
 while (i <= 50) {
     if (!(i >= 20 && i <= 30)) {
         console.log(i);

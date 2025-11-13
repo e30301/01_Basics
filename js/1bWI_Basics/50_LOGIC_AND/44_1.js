@@ -26,7 +26,7 @@ if (points > 89) {
  
 } else if (points > 69) {
     console.log("Grade C");
-
+ 
 } else if (points > 59) {
     console.log("Grade D");
  

@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 let pass = "verysecure";
-
+ 
 const userinput = prompt("enter password: ");
  
 if (userinput == pass) {

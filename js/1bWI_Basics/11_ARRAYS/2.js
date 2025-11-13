@@ -14,9 +14,9 @@ You should have received a copy of the GNU General Public License
 along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 */
 
-
+ 
 let arr = ["Susi", "Paula", "Hans"];
-
+ 
 console.log("Meine Freunde sind " + arr[0] + ", " + arr[1] + " und " + arr[2]);
 arr.push("Sepp")
 console.log("Meine Freunde sind " + arr[0] + ", " + arr[1] + ", " + arr[2] + " und " + arr[3]);
