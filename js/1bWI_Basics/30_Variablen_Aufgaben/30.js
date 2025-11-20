@@ -15,7 +15,6 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 */
 
 
-
 // var banana = "Banane";
 // var apple = "Apple";
 var bananaPricePerKilo = 2.14;
