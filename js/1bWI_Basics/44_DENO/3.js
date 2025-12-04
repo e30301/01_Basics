@@ -20,18 +20,18 @@ let num2 = prompt("Number2");
 let calcType = prompt("Operation (+,-, *, /, **)");
 
  
-if (calcType === "+") {
+if (calcType == "+") {
     console.log(num1 + num2);
 }
-if (calcType === "-") {
+if (calcType == "-") {
     console.log(num1 - num2);
-} 
-if (calcType === "*") {
+}
+if (calcType == "*") {
     console.log(num1 * num2);
 }
-if (calcType === "/") {
+if (calcType == "/") {
     console.log(num1 / num2);
 }
-if (calcType === "^" || "**") {
+if (calcType == "^") {
     console.log(num1 ** num2);
 }
