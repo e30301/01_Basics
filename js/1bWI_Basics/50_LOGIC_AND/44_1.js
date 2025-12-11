@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 
-let points = Math.floor(Math.random() * 100);
+let points = Math.trunc(Math.random() * 100);
  
 if (points > 89) {
     console.log("Grade A");

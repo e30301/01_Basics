@@ -16,7 +16,7 @@ along with this program.If not, see < http://www.gnu.org/licenses/gpl.txt>.
 
 
 
-let randomNumber = Math.floor(Math.random() * 10); 
+let randomNumber = Math.trunc(Math.random() * 10); 
 console.log(randomNumber);
  
 if (randomNumber < 5) {

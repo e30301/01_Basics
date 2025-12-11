@@ -1,13 +1,13 @@
 let bombs = [];
 while (bombs.length < 3) {
-    let n = Math.floor(Math.random() * 25) + 1;
+    let n = Math.trunc(Math.random() * 25) + 1;
     if (!bombs.includes(n)) bombs.push(n);
 }
 
 let ded = false;
 
 function bombsNearby(where) {
-    let row = Math.floor((where - 1) / 5);
+    let row = Math.trunc((where - 1) / 5);
     let col = (where - 1) % 5;
     let count = 0;
     for (let r = row - 1; r <= row + 1; r++) {

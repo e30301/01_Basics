@@ -21,7 +21,7 @@ let arr = [];
 let rand = 0;
  
 while (i !== 7) {
-    rand = Math.floor(Math.random() * 10); 
+    rand = Math.trunc(Math.random() * 10); 
     arr.push(rand);
     i++;
 }

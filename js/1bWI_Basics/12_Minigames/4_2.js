@@ -9,7 +9,7 @@ function createBombs(number) {
     
     
     while (i < number) {
-        bombTemp = Math.floor(Math.random()*25+1);
+        bombTemp = Math.trunc(Math.random()*25+1);
         if (!bombs.includes(bombTemp)) {
         bombs.push(bombTemp);
         i++
@@ -35,6 +35,18 @@ function nearbyBombs(feld) {
         } 
         if (bombs.includes(feld - 1)) {
              bombsNearby++;
+        }
+        if (bombs.includes(feld - 4)) {
+            bombsNearby++;
+        }
+        if (bombs.includes(feld - 6)) {
+            bombsNearby++;
+        }
+        if (bombs.includes(feld + 6)) {
+            bombsNearby++;
+        }
+        if (bombs.includes(feld + 4)) {
+            bombsNearby++;
         }
         console.log("bomben in der Nähe: " + bombsNearby);
     } else {

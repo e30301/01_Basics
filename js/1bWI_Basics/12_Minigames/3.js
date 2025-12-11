@@ -1,4 +1,4 @@
-let number = Math.floor(Math.random()*100);
+let number = Math.trunc(Math.random()*100);
 let guess = 0;
 
 while (guess !== number) {

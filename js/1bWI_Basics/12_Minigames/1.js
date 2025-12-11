@@ -22,10 +22,10 @@ while (i !== 0) {
 }
 
 function doDice() {
-    human = Math.floor(Math.random()*6+1);
+    human = Math.trunc(Math.random()*6+1);
     console.log("du: " + human);
 
-    computer = Math.floor(Math.random()*6+1);
+    computer = Math.trunc(Math.random()*6+1);
     console.log("computer: " + computer);
 
     if (human > computer) {

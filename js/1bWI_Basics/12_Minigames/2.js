@@ -1,5 +1,5 @@
 let human = Number(prompt("schere(1)/stein(2)/papier(3)?"));
-let computer = Math.floor(Math.random()*3+1);
+let computer = Math.trunc(Math.random()*3+1);
 
 console.log(human);
 console.log(computer);
