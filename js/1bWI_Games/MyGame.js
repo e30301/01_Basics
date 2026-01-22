@@ -1,65 +1,48 @@
-// =========================
-// Keyboard Input Handling
-// =========================
-const keys = {};
+// MyGame - Example implementation of Game interface
 
-window.addEventListener("keydown", (e) => {
-  keys[e.key.toLowerCase()] = true;
-});
-
-window.addEventListener("keyup", (e) => {
-  keys[e.key.toLowerCase()] = false;
-});
-
-
-// =========================
-// Game Implementation
-// =========================
 class MyGame extends Game {
-  x = 100;
-  y = 500;
-  width = 50;
-  height = 50;
-  speed = 2; // pixels per second
+  rect1 = {
+    x: 50,
+    y: 250,
+    width: 60,
+    height: 40,
+    vx: 200, // pixels per second
+  };
+
+  rectangle = {
+    x: 50,
+    y: 250,
+    width: 60,
+    height: 40,
+    vx: 200, // pixels per second
+  };
 
   init() {
     console.log("Game started!");
   }
 
   update(deltaTime) {
-    // Convert ms → seconds
-    const dt = 0.1;
-
-    if (keys["a"]) this.x -= this.speed;
-    if (keys["d"]) this.x += this.speed;
-    
-    if (keys["w"]) {
-      if (this.y > 100) {
-        this.y += 2
-      }
+    this.rectangle.x += this.rectangle.vx * deltaTime;
+    if (this.rectangle.x > 800) {
+      this.rectangle.x = -this.rectangle.width;
     }
-    if (keys["s"]) this.y += this.speed;
-
-    // Optional: keep player inside canvas (800x600)
-    this.x = Math.max(0, Math.min(this.x, 800 - this.width));
-    this.y = Math.max(0, Math.min(this.y, 600 - this.height));
-
-    this.y = this.y + 1
+    this.rectangle.width++;
   }
 
   render(ctx) {
-    ctx.clearRect(0, 0, 800, 600);
+    // Draw rectangle
+    ctx.fillStyle = "#FF66aa";
 
-    // Player
-    ctx.fillStyle = "#638400ff";
-    ctx.fillRect(this.x, this.y, this.width, this.height);
+    ctx.fillRect(
+      this.rectangle.x,
+      this.rectangle.y,
+      this.rectangle.width,
+      this.rectangle.height
+    );
   }
 }
 
-
-// =========================
-// Game Startup
-// =========================
 const game = new MyGame();
+
 const framework = new GameFramework(game, 800, 600);
 framework.start();
