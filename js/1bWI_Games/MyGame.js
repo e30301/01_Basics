@@ -1,20 +1,11 @@
 // MyGame - Example implementation of Game interface
 
 class MyGame extends Game {
-  rect1 = {
-    x: 50,
-    y: 250,
-    width: 60,
-    height: 40,
-    vx: 200, // pixels per second
-  };
-
   rectangle = {
     x: 50,
     y: 250,
-    width: 60,
-    height: 40,
-    vx: 200, // pixels per second
+    width: 100,
+    height: 100,
   };
 
   init() {
@@ -22,25 +13,32 @@ class MyGame extends Game {
   }
 
   update(deltaTime) {
-    this.rectangle.x += this.rectangle.vx * deltaTime;
-    if (this.rectangle.x > 800) {
-      this.rectangle.x = -this.rectangle.width;
+    console.log("x: " + this.rectangle.x);
+    console.log("y: " + this.rectangle.y);
+
+    if(this.rectangle.x < 250) {
+      if(this.rectangle.y < 250) {
+        
+      }
     }
-    this.rectangle.width++;
   }
 
   render(ctx) {
     // Draw rectangle
-    ctx.fillStyle = "#FF66aa";
+    ctx.fillStyle = "#ffffff";
+    ctx.strokeStyle = "#ffffff";
 
-    ctx.fillRect(
+    ctx.strokeRect(
       this.rectangle.x,
       this.rectangle.y,
       this.rectangle.width,
       this.rectangle.height
     );
+
+    ctx.font = "16px monospace";
+    ctx.fillText("Hello You!", 50, 50);
   }
-}
+} // ← missing brace fixed here
 
 const game = new MyGame();
 
