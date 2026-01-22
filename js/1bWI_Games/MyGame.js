@@ -16,11 +16,16 @@ class MyGame extends Game {
     console.log("x: " + this.rectangle.x);
     console.log("y: " + this.rectangle.y);
 
-    if(this.rectangle.x < 250) {
-      if(this.rectangle.y < 250) {
-        
+      if(this.rectangle.y < 401 && this.rectangle.x <= 600) {
+        this.rectangle.y += 1
+      } else if(this.rectangle.y > 400 && this.rectangle.x <= 600) {
+          this.rectangle.x += 1;
+
+      } else if(this.rectangle.x > 600 && this.rectangle.y > 100) {
+          this.rectangle.y -= 1;
       }
-    }
+      
+    
   }
 
   render(ctx) {
