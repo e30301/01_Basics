@@ -52,6 +52,7 @@ class GameFramework {
     this.height = height;
     this.gameObjects = [];
     this.running = false;
+    
 
     // Setup canvas
     this.canvas = document.getElementById(canvasId);
