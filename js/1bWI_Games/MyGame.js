@@ -3,7 +3,7 @@
 class MyGame extends Game {
   rectangle = {
     x: 50,
-    y: 250,
+    y: 50,
     width: 100,
     height: 100,
   };
@@ -16,18 +16,32 @@ class MyGame extends Game {
     console.log("x: " + this.rectangle.x);
     console.log("y: " + this.rectangle.y);
 
-      if(this.rectangle.y < 401 && this.rectangle.x <= 600) {
-        this.rectangle.y += 1
-      } else if(this.rectangle.y > 400 && this.rectangle.x <= 600) {
-          this.rectangle.x += 1;
-
-      } else if(this.rectangle.x > 600 && this.rectangle.y > 100) {
-          this.rectangle.y -= 1;
+      if(this.rectangle.y == 50 && this.rectangle.x == 50) {
+        dir = 3;
+      } else if (this.rectangle.y == 450 && this.rectangle.x == 50) {
+        dir = 2;
+      } else if (this.rectangle.y == 450 && this.rectangle.x == 650) {
+        dir = 1;
+      } else if (this.rectangle.y == 50 && this.rectangle.x == 650) {
+        dir = 4;
       }
-      
-    
-  }
 
+    if(dir == 1) {
+      this.rectangle.y -= 2;
+      this.rectangle.x;
+    } else if(dir == 2) {
+      this.rectangle.y;
+      this.rectangle.x += 2;
+    } else if(dir == 3) {
+      this.rectangle.y += 2;
+      this.rectangle.x;
+    } else if(dir == 4) {
+      this.rectangle.y;
+      this.rectangle.x -= 2;
+    }
+
+    console.log(dir);
+  }
   render(ctx) {
     // Draw rectangle
     ctx.fillStyle = "#ffffff";
@@ -44,7 +58,7 @@ class MyGame extends Game {
     ctx.fillText("Hello You!", 50, 50);
   }
 } // ← missing brace fixed here
-
+let dir = 1;
 const game = new MyGame();
 
 const framework = new GameFramework(game, 800, 600);
