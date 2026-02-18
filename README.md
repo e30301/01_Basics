@@ -1,8 +1,6 @@
 ## Javascript Basics
 ---
 
-
-
 - Variablen
 - Arrays
 - Strings
@@ -15,3 +13,9 @@
 - And
 - Or
 - Loops
+- Games
+
+## HTML Basics
+---
+
+- CSS
