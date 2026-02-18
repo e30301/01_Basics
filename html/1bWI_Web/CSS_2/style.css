@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.div1 {
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 35%;
+}
+.div2 {
+    width: 33%;
+    height: 100%;
+    background-color: rgb(109, 180, 255);
+    position: relative;
+}
+
+.div3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 132, 0);
+    z-index: 5;
+}
+.div4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 132, 0);
+    z-index: 5;
+}
+.div5 {
+    width: 20%;
+    height: 25%;
+    background-color: rgb(0, 173, 0);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.div6 {
+    height: 35%;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
