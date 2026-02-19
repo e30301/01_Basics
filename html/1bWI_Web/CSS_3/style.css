@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+.div1 {
+    background-color: green;
+    height: 400px;
+    width: 400px;
+}

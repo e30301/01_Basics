@@ -1,0 +1,81 @@
+@font-face {
+    font-family: font;
+    /* set name */
+    src: url(das.woff2);
+    /* url of the font */
+}
+
+
+
+.box {
+    border: 2px solid #000000;
+    width: 100px;
+    height: 25px;
+    background: linear-gradient(to bottom right, #bdbdbd, #6c6c6c);
+    margin: 10px;
+}
+
+body {
+    margin: 0%;
+    background-color: #00032c;
+    background-repeat: no-repeat;
+    color: #c9fff3ef;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: font;
+    font-size: 24px;
+
+}
+
+.loginbox {
+    background-color: #2b2b3a;
+    box-shadow: none;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #c9fff3ef;
+    margin: 20px;
+    font-size: 28px;
+    position: relative;
+    bottom: 0px;
+}
+
+.logintext {
+    font-size: 96px;
+    position: relative;
+    top: 0px;
+    margin: 0px;
+}
+
+.box1 {
+    width: 360px;
+    height: 500px;
+    background-color: #2b2b3a;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    top: 0px;
+    left: 33.33333333333333333333333333333333333333333333333333333333333333333%;
+    
+    3;   
+; /*hehehehehhehah*/
+    z-index: -1;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.bgimg {
+    background-image: url(bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    position: absolute;
+}
