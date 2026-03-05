@@ -1,0 +1,41 @@
+* {
+	font-family: monospace, sans-serif;
+    font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 2em;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+.logo {
+    font: 15px monospace; color: white; text-align: center;
+}
+
+.a:link {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: auto;
+}
+.a:hover {
+    color: #b0b0b0;
+    transition-duration: 100ms;
+}
+
+a:link:active, a:visited:active {
+  color: #ffffff;
+}
