@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     background-color: black;
     font-size: 14px;
@@ -8,7 +12,6 @@
     left: 0px;
 
     padding-right: 100px;
-    margin-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
