@@ -1,5 +1,5 @@
 body {
-    margin: 50px;
+    margin: 30px;
 }
 .bigcontainer {
     background-color: lightblue;
@@ -27,13 +27,13 @@ body {
 }
 .greenrect {
     width: 100px;
-    height: 50px;
+    height: 30px;
     background-color: lightgreen;
 }
 .blacksquare {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: black;
     top: 20px;
     left: 20px;

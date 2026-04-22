@@ -1,5 +1,10 @@
+@font-face {
+    font-family: mbc;
+    src: url("assets/font.woff2");
+}
 * {
     box-sizing: border-box;
+    font-family: mbc;
 }
 
 .header {
@@ -8,70 +13,105 @@
     width: 100%;
     height: 85px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
-    padding-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px;
+    padding-right: 110px;
+    padding-left: 110px;
+    font-size: 16px;
+
 }
 
 .navlinks {
     color: white;
-    margin: 100px;
     display: flex;
-    align-items: space-between;
-    gap: 30px;
+    gap: 50px;
+    margin: 0;
 }
+
 .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url("assets/logo.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 37px;
+    width: 37px;
 }
+
 .icons {
     display: flex;
-    justify-content: space-between;
+    gap: 25px;
 }
+
 .legal {
     background-image: url("assets/legal.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     filter: invert(1);
 }
+
 .search {
     background-image: url("assets/search.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     filter: invert(1);
 }
+
 .heart {
     background-image: url("assets/heart.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     filter: invert(1);
 }
+
 .login {
     display: flex;
-
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
+
 .right {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
 }
+
 .loginicon {
-    background-image: url("assets/login.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30px;
-    width: 30px;
-    filter: invert(1);
+height: 34px;
+width: 34px;
+background-color: #696969;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.loginicon img {
+width: 50%;
+height: 50%;
+filter: invert(1);
+}
+.logintext {
+    display: flex;
+    flex-direction: column;
+}
+.logintext_anmelden {
+    color: white;
+    font-size: 14px;
+}
+.logintext_privatkunde {
+    color: white;
+    font-size: 11px;
 }
