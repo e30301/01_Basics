@@ -1,0 +1,121 @@
+* {
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #DAD7CD;
+}
+.main_body {
+    margin: 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #344E41;
+    width: 100%;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #A3B18A;
+    border-radius: 15px;
+    width: 340px;
+    height: 40px;
+    padding: 5px;
+}
+.searchbar {
+    width: 300px;
+    height: 100%;
+    background-color: #00000000;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
+    padding: 3px;
+}
+.searchbar:focus {
+    outline: none;
+}
+.searchbar_button {
+    height: 100%;
+    width: 40px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.searchbar_button:hover {
+    background-color: #DAD7CD;
+}
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A3B18A;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    padding: 5px;
+}
+
+.fa-filter {
+    color: rgb(0, 0, 0);
+}
+
+.main_body {
+    display: flex;
+    gap: 30px;
+}
+.navlinks {
+    height: fit-content;
+    width: fit-content;
+    border: 3px solid #344e41;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dad7cd;
+}
+a {
+    color: #344e41;
+}
+a:hover {
+    color: #17221d;
+}
+a:visited {
+    color: #344e41;
+}
+.posts {
+    height: fit-content;
+    width: fit-content;
+    border: 3px solid #344e41;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post_header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: #344e41;
+    color: #dad7cd;
+    padding: 4px;
+    border: 0px solid #00000000;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.post {
+    height: fit-content;
+    width: 600px;
+    border: 3px solid #344e41;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dad7cd;
+}
