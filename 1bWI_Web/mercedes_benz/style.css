@@ -2,9 +2,17 @@
     font-family: mbc;
     src: url("assets/font.woff2");
 }
+
 * {
     box-sizing: border-box;
     font-family: mbc;
+    padding: 0px;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .header {
@@ -13,6 +21,7 @@
     width: 100%;
     height: 85px;
     position: absolute;
+    z-index: 100000;
     top: 0;
     left: 0;
 
@@ -23,6 +32,7 @@
     padding-right: 110px;
     padding-left: 110px;
     font-size: 16px;
+    margin: 0px;
 
 }
 
@@ -90,28 +100,45 @@
 }
 
 .loginicon {
-height: 34px;
-width: 34px;
-background-color: #696969;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+    height: 34px;
+    width: 34px;
+    background-color: #696969;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .loginicon img {
-width: 50%;
-height: 50%;
-filter: invert(1);
+    width: 50%;
+    height: 50%;
+    filter: invert(1);
 }
+
 .logintext {
     display: flex;
     flex-direction: column;
 }
+
 .logintext_anmelden {
     color: white;
     font-size: 14px;
 }
+
 .logintext_privatkunde {
     color: white;
     font-size: 11px;
+}
+
+.bgimg {
+    background-image: url("assets/background.png");
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

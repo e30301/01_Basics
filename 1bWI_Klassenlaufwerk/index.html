@@ -7,6 +7,7 @@
     <title>Klassenlaufwerk</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,11 +18,29 @@
                 <input type="text" placeholder="Search..." class="searchbar">
                 <button type="submit" class="searchbar_button"><i class="fa fa-search"></i></button>
             </div>
-            <div class="filter">
+            <div class="filter" onclick="myFunction()">
+
                 <div class="filter_icon"><i class="fa fa-filter"></i></div>
                 <div class="filter_text">Filter</div>
+
+                <div id="dropdown" class="dropdown-content">
+                    <p onclick="javascript:void(0)">Hausübung</p>
+                    <p onclick="javascript:void(0)">Tafelbilder</p>
+                    <p onclick="javascript:void(0)">Lernstoff</p>
+                    <p onclick="javascript:void(0)">Schulübungen</p>
+                    <p onclick="javascript:void(0)">Arbeitsblätter</p>
+                </div>
+
             </div>
             </input>
+            <!--<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>-->
         </div>
         <div class="main_body">
             <div class="navlinks">
@@ -116,6 +135,10 @@
                         <div class="post_content_images">
                             <img src="https://picsum.photos/198"></img>
                             <img src="https://picsum.photos/202"></img>
+                            <img src="https://picsum.photos/198"></img>
+                            <img src="https://picsum.photos/198"></img>
+                            <img src="https://picsum.photos/198"></img>
+                            <img src="https://picsum.photos/198"></img>
                         </div>
                         <div class="post_content_description">Lorem ipsum dolor sit amet oder so Lorem ipsum dolor sit
                             amet oder so Lorem ipsum dolor sit amet oder so Lorem ipsum dolor sit amet oder so</div>
