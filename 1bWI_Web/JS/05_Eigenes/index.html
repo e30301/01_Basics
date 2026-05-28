@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>superkahoot Cheats !!1!!1</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h2>beitreten</h2>
+            <div class="input-group">
+                <input type="text" id="gamePin" placeholder="pin">
+                <input type="text" id="playerName" placeholder="name">
+                <button onclick="joinGame()">beitreten</button>
+            </div>
+            <div id="joinStatus"></div>
+        </div>
+
+        <div class="card">
+            <h2>bot spammer</h2>
+            <div class="input-group">
+                <input type="text" id="botNamePrefix" placeholder="bot name">
+                <input type="number" id="botCount" placeholder="anzahl bots" value="5">
+                <button onclick="startBotting()">start</button>
+            </div>
+            <div id="botStatus"></div>
+        </div>
+
+        <div class="card" id="gameInfoCard" style="display: none;">
+            <h2>info</h2>
+            <div id="gameInfo"></div>
+        </div>
+
+        <div class="card" id="playersCard" style="display: none;">
+            <h2>spieler <span id="playerCount"></span></h2>
+            <div style="margin-bottom: 15px;">
+                <button onclick="refreshPlayers()" class="success">neu laden</button>
+                <button onclick="boostScore()" class="danger">100000 punkte hack</button>
+                <button onclick="addPoints()" class="success">+5000 punkte</button>
+            </div>
+            <div id="playersList"></div>
+        </div>
+
+    </div>
+
+    <script src="api.js"></script>
+    <script src="bot.js"></script>
+</body>
+</html>
