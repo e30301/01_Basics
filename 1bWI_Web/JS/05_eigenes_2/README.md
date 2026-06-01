@@ -1,1 +1,1 @@
-# herr riedmann reparieren sie die firebase
+# herr riedmann firebase ist immer noch offen
