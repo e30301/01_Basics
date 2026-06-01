@@ -13,9 +13,11 @@
 - And
 - Or
 - Loops
+
 - Games
 
 ## HTML Basics
 ---
 
 - CSS
+- JS

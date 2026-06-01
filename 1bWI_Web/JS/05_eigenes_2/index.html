@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="setup" class="setup">
+    <input id="nameInput" placeholder="username"/ class="nameInput">
+    <button onclick="join()" class="joinButton">Join</button>
+  </div>
+
+  <div id="chat" class="chat" hidden>
+    <div id="messages" class="messages"></div>
+    <input id="msgInput" placeholder="message" class="msgInput"/>
+    <button onclick="sendMessage()" class="send">Send</button>
+  </div>
+  <footer>ein proof of concept chat programm mit einer gewissen firebase</footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
