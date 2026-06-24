@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px;
+    width: fit-content;
+    padding: 10px;
+}
+#input {
+    width: 500px;
+    height: 50px;
+    border: 0px solid black;
+    border-radius: 15px;
+}
+#submit {
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    border-radius: 15px;
+}
+.interactive {
+    border: 3px solid black;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 5px 5px;
+    margin: 20px;
+}
+#todos {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 530px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#todos button {
+    width: fit-content;
+    height: 30px;
+    border: 0px solid black;
+    border-radius: 15px;
+}

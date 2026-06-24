@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="todos"></div>
-    <input id="input">
-    <button id="submit" onclick="addTodo()">add</button>
+    <h1>ToDo-Liste</h1>
+    <div class="main">
+        <div class="interactive">
+            <input id="input">
+            <button id="submit" onclick="addTodo()">Add</button>
+        </div>
+        <div id="todos"></div>
+    </div>
 </body>
 </html>
