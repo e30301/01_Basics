@@ -41,9 +41,6 @@ body {
     border-radius: 15px;
     padding: 10px;
     width: 530px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
 }
 #todos button {
