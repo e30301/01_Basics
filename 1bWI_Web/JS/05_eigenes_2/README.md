@@ -1,1 +1,0 @@
-# herr riedmann firebase ist immer noch offen
